@@ -4,7 +4,7 @@ interface ItemProps {
   value: string;
 }
 
-const Item = ({ value }: ItemProps) => {
+const AddButton = ({ value }: ItemProps) => {
   const [copiedText, copyToClipboard] = useCopyToClipboard();
   const hasCopiedText = Boolean(copiedText);
 
@@ -14,4 +14,4 @@ const Item = ({ value }: ItemProps) => {
     </button>
   );
 };
-export default Item;
+export default AddButton;

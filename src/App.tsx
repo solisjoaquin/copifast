@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
-import Item from "./components/item";
+import AddButton from "./components/item";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
@@ -35,7 +35,7 @@ function App() {
         {savedValues?.map((value: string, index: number) => (
           <div key={value}>
             <span>{value}</span>
-            <Item value={value} />
+            <AddButton value={value} />
             <button
               onClick={() =>
                 setSavedValues((prev: string) => [
